@@ -1,0 +1,531 @@
+[
+  {
+    "question": "You have two subscriptions named Subscription1 and Subscription2. Each subscription is associated to a different Azure AD tenant. <br><br>Subscription1 contains a virtual network named VNet1. VNet1 contains an Azure virtual machine named VM1 and has an IP address space of 10.0.0.0/16. <br><br>Subscription2 contains a virtual network named VNet2. Vnet2 contains an Azure virtual machine named VM2 and has an IP address space of 10.10.0.0/24. <br><br>You need to connect VNet1 to VNet2. <br><br>What should you do first?",
+    "choices": [
+      {
+        "label": "Modify the IP address space of VNet2.",
+        "isCorrect": 0
+      },
+      {
+        "label": "Move VM1 to Subscription2.",
+        "isCorrect": 0
+      },
+      {
+        "label": "Provision virtual network gateways.",
+        "isCorrect": 1
+      },
+      {
+        "label": "Move VNet1 to Subscription2.",
+        "isCorrect": 0
+      }
+    ]
+  },
+  {
+    "question": "You have an Azure Active Directory (Azure AD) tenant.<br><br>You have an existing Azure AD conditional access policy named Policy1. Policy1 enforces the use of Azure AD-joined devices when members of the Global Administrators group authenticate to Azure AD from untrusted locations.<br><br>You need to ensure that members of the Global Administrators group will also be forced to use multi-factor authentication when authenticating from untrusted locations.",
+    "choices": [
+      {
+        "label": "From the Azure portal, modify session control of Policy1.",
+        "isCorrect": 0
+      },
+      {
+        "label": "From multi-factor authentication page, modify the user settings.",
+        "isCorrect": 0
+      },
+      {
+        "label": "From multi-factor authentication page, modify the service settings.",
+        "isCorrect": 0
+      },
+      {
+        "label": "From the Azure portal, modify grant control of Policy1.",
+        "isCorrect": 1
+      }
+    ]
+  },
+  {
+    "question": "You have an Azure subscription named Subscription1 that contains an Azure virtual machine named VM1. VM1 is in a resource group named RG1.<br><br>VM1 runs services that will be used to deploy resources to RG1.<br><br>You need to ensure that a service running on VM1 can manage the resources in RG1 by using the identity of VM1.<br><br>What should you do first?",
+    "choices": [
+      {
+        "label": "From the Azure portal, modify the Access control (IAM) settings of RG1.",
+        "isCorrect": 0
+      },
+      {
+        "label": "From the Azure portal, modify the Policies settings of RG1.",
+        "isCorrect": 0
+      },
+      {
+        "label": "From the Azure portal, modify the Access control (IAM) settings of VM1.",
+        "isCorrect": 0
+      },
+      {
+        "label": "From the Azure portal, modify the value of the Managed Service Identity option for VM1.",
+        "isCorrect": 1
+      }
+    ]
+  },
+  {
+    "question": "You configure Azure AD Connect for Azure Active Directory Seamless Single Sign-On (Azure AD Seamless SSO) for an on-premises network.<br><br>Users report that when they attempt to access myapps.microsoft.com, they are prompted multiple times to sign in and are forced to use an account name that ends with onmicrosoft.com.<br><br>You discover that there is a UPN mismatch between Azure AD and the on-premises Active Directory.<br><br>You need to ensure that the users can use single-sign on (SSO) to access Azure resources.<br><br>What should you do first?",
+    "choices": [
+      {
+        "label": "From on-premises network, deploy Active Directory Federation Services (AD FS).",
+        "isCorrect": 0
+      },
+      {
+        "label": "From Azure AD, add and verify a custom domain name.",
+        "isCorrect": 1
+      },
+      {
+        "label": "From on-premises network, request a new certificate that contains the Active Directory domain name.",
+        "isCorrect": 0
+      },
+      {
+        "label": "From the server that runs Azure AD Connect, modify the filtering options.",
+        "isCorrect": 0
+      }
+    ]
+  },
+  {
+    "question": "You have an Active Directory forest named contoso.com.<br><br>You install and configure Azure AD Connect to use password hash synchronization as the single sign-on(SSO) method. Staging mode is enabled.<br><br>You review the synchronization results and discover that the Synchronization Service Manager does not display any sync jobs.<br><br>You need to ensure that the synchronization completes successfully.<br><br>What should you do?",
+    "choices": [
+      {
+        "label": "From Azure PowerShell, run Start-AdSyncSyncCycle –PolicyType Initial.",
+        "isCorrect": 0
+      },
+      {
+        "label": "Run Azure AD Connect and set the SSO method to Pass-through Authentication.",
+        "isCorrect": 0
+      },
+      {
+        "label": "From Synchronization Service Manager, run a full import.",
+        "isCorrect": 0
+      },
+      {
+        "label": "Run Azure AD Connect and disable staging mode.",
+        "isCorrect": 1
+      }
+    ]
+  },
+  {
+    "question": "You have an Azure subscription that contains 100 virtual machines.<br><br>You regularly create and delete virtual machines.<br><br>You need to identify unattached disks that can be deleted.<br><br>What should you do?",
+    "choices": [
+      {
+        "label": "From Microsoft Azure Storage Explorer, view the Account Management properties.",
+        "isCorrect": 0
+      },
+      {
+        "label": "From Azure Cost Management, create a Cost Management report.",
+        "isCorrect": 0
+      },
+      {
+        "label": "From the Azure portal, configure the Advisor recommendations.",
+        "isCorrect": 0
+      },
+      {
+        "label": "From Azure Cost Management, open the Optimizer tab and create a report.",
+        "isCorrect": 1
+      }
+    ]
+  },
+  {
+    "question": "You have an Azure subscription that contains 10 virtual machines.<br><br>You need to ensure that you receive an email message when any virtual machines are powered off, restarted, or deallocated.<br><br>What is the minimum number of rules and action groups that you require?",
+    "choices": [
+      {
+        "label": "three rules and three action groups",
+        "isCorrect": 0
+      },
+      {
+        "label": "one rule and one action group",
+        "isCorrect": 0
+      },
+      {
+        "label": "three rules and one action group",
+        "isCorrect": 1
+      },
+      {
+        "label": "one rule and three action groups",
+        "isCorrect": 0
+      }
+    ]
+  },
+  {
+    "question": "You plan to automate the deployment of a virtual machine scale set that uses the Windows Server 2016 Datacenter image.<br><br>You need to ensure that when the scale set virtual machines are provisioned, they have web server components installed.<br><br>Which two actions should you perform? Each correct answer presents part of the solution.<br><br>NOTE: Each correct selection is worth one point.",
+    "choices": [
+      {
+        "label": "Upload a configuration script.",
+        "isCorrect": 0
+      },
+      {
+        "label": "Create an automation account.",
+        "isCorrect": 0
+      },
+      {
+        "label": "Create a new virtual machine scale set in the Azure portal.",
+        "isCorrect": 1
+      },
+      {
+        "label": "Create an Azure policy.",
+        "isCorrect": 0
+      },
+      {
+        "label": "Modify the extensionProfile section of the Azure Resource Manager template.",
+        "isCorrect": 1
+      }
+    ]
+  },
+  {
+    "question": "You have an Azure subscription.<br><br>You have 100 Azure virtual machines.<br><br>You need to quickly identify underutilized virtual machines that can have their service tier changed to a less expensive offering.<br><br>Which blade should you use?",
+    "choices": [
+      {
+        "label": "Customer insights",
+        "isCorrect": 0
+      },
+      {
+        "label": "Monitor",
+        "isCorrect": 0
+      },
+      {
+        "label": "Advisor",
+        "isCorrect": 1
+      },
+      {
+        "label": "Metrics",
+        "isCorrect": 0
+      }
+    ]
+  },
+  {
+    "question": "An app uses a virtual network with two subnets. One subnet is used for the application server. The other subnet is used for a database server. A network virtual appliance (NVA) is used as a firewall.<br><br>Traffic destined for one specific address prefix is routed to the NVA and then to an on-premises database server that stores sensitive data. A Border Gateway Protocol (BGP) route is used for the traffic to the on-premises database server.<br><br>You need to recommend a method for creating the user-defined route.<br><br>Which two options should you recommend? Each correct answer presents a complete solution.<br><br>NOTE: Each correct selection is worth one point.",
+    "choices": [
+      {
+        "label": "For the virtual network configuration, use a VPN.",
+        "isCorrect": 1
+      },
+      {
+        "label": "For the next hop type, use a virtual network peering.",
+        "isCorrect": 0
+      },
+      {
+        "label": "For the virtual network configuration, use Azure ExpressRoute.",
+        "isCorrect": 1
+      },
+      {
+        "label": "For the next hop type, use a virtual network gateway.",
+        "isCorrect": 0
+      }
+    ]
+  },
+  {
+    "question": "You manage a solution in Azure that consists of a single application which runs on a virtual machine (VM). Traffic to the application has increased dramatically.<br><br>The application must not experience any downtime and scaling must be dynamically defined.<br><br>You need to define an auto-scale strategy to ensure that the VM can handle the workload.<br><br>Which three options should you recommend? Each correct answer presents a complete solution.<br><br>NOTE: Each correct selection is worth one point.",
+    "choices": [
+      {
+        "label": "Deploy application automatic vertical scaling.",
+        "isCorrect": 0
+      },
+      {
+        "label": "Create a VM availability set.",
+        "isCorrect": 0
+      },
+      {
+        "label": "Create a VM scale set.",
+        "isCorrect": 1
+      },
+      {
+        "label": "Deploy application automatic horizontal scaling.",
+        "isCorrect": 1
+      },
+      {
+        "label": "Deploy a custom auto-scale implementation.",
+        "isCorrect": 1
+      }
+    ]
+  },
+  {
+    "question": "You are implementing authentication for applications in your company. You plan to implement self-service password reset (SSPR) and multifactor authentication (MFA) in Azure Active Directory (Azure AD).<br><br>You need to select authentication mechanisms that can be used for both MFA and SSPR.<br><br>Which two authentication methods should you use? Each correct answer presents a complete solution.<br><br>NOTE: Each correct selection is worth one point.",
+    "choices": [
+      {
+        "label": "Short Message Service (SMS) messages",
+        "isCorrect": 1
+      },
+      {
+        "label": "Azure AD passwords",
+        "isCorrect": 1
+      },
+      {
+        "label": "Email addresses",
+        "isCorrect": 0
+      },
+      {
+        "label": "Security questions",
+        "isCorrect": 0
+      },
+      {
+        "label": "App passwords",
+        "isCorrect": 0
+      }
+    ]
+  },
+  {
+    "question": "Note: This question is part of series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<br><br>After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<br><br>You have an Azure subscription that contains 10 virtual networks. The virtual networks are hosted in separate resource groups.<br><br>Another administrator plans to create several network security groups (NSGs) in the subscription.<br><br>You need to ensure that when an NSG is created, it automatically blocks TCP port 8080 between the virtual networks.<br><br>Solution: You create a resource lock, and then you assign the lock to the subscription.<br><br>Does this meet the goal?",
+    "choices": [
+      {
+        "label": "Yes",
+        "isCorrect": 0
+      },
+      {
+        "label": "No",
+        "isCorrect": 1
+      }
+    ]
+  },
+  {
+    "question": "Note: This question is part of series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<br><br>After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<br><br>You have an Azure subscription named Subscription1. Subscription1 contains a resource group named RG1. RG1 contains resources that were deployed by using templates.<br><br>You need to view the date and time when the resources were created in RG1.<br><br>Solution: From the RG1 blade, you click Automation script.<br><br>Does this meet the goal?",
+    "choices": [
+      {
+        "label": "Yes",
+        "isCorrect": 0
+      },
+      {
+        "label": "No",
+        "isCorrect": 1
+      }
+    ]
+  },
+  {
+    "question": "Note: This question is part of series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<br><br>After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<br><br>You have an Azure subscription named Subscription1. Subscription1 contains a resource group named RG1. RG1 contains resources that were deployed by using<br><br>templates.<br><br>You need to view the date and time when the resources were created in RG1.<br><br>Solution: From the Subscription blade, you select the subscription, and then click Resource providers.<br><br>Does this meet the goal?",
+    "choices": [
+      {
+        "label": "Yes",
+        "isCorrect": 0
+      },
+      {
+        "label": "No",
+        "isCorrect": 1
+      }
+    ]
+  },
+  {
+    "question": "Note: This question is part of series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.<br><br>After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.<br><br>You have an Azure subscription named Subscription1. Subscription1 contains a resource group named RG1. RG1 contains resources that were deployed by using<br><br>templates.<br><br>You need to view the date and time when the resources were created in RG1.<br><br>Solution: From the RG1 blade, you click Deployments.<br><br>Does this meet the goal?",
+    "choices": [
+      {
+        "label": "Yes",
+        "isCorrect": 1
+      },
+      {
+        "label": "No",
+        "isCorrect": 0
+      }
+    ]
+  },
+  {
+    "question": "You plan to use the Azure Import/Export service to copy files to a storage account.<br><br>Which two files should you create before you prepare the drives for the import job? Each correct answer presents part of the solution.<br><br>NOTE: Each correct selection is worth one point.",
+    "choices": [
+      {
+        "label": "a dataset CSV file",
+        "isCorrect": 1
+      },
+      {
+        "label": "an XML manifest file",
+        "isCorrect": 0
+      },
+      {
+        "label": "a driveset CSV file",
+        "isCorrect": 1
+      },
+      {
+        "label": "a PowerShell PS1 file",
+        "isCorrect": 0
+      },
+      {
+        "label": "a JSON configuration file",
+        "isCorrect": 0
+      }
+    ]
+  },
+  {
+    "question": "You create an Azure Storage account named contosostorage.<br><br>You plan to create a file share named data.<br><br>Users need to map a drive to the data file share from home computers that run Windows 10.<br><br>Which outbound port should you open between the home computers and the data file share?",
+    "choices": [
+      {
+        "label": "80",
+        "isCorrect": 0
+      },
+      {
+        "label": "443",
+        "isCorrect": 0
+      },
+      {
+        "label": "445",
+        "isCorrect": 1
+      },
+      {
+        "label": "3389",
+        "isCorrect": 0
+      }
+    ]
+  },
+  {
+    "question": "You have an Azure tenant that contains two subscriptions named Subscription1 and Subscription2.<br><br>In Subscription1, you deploy a virtual machine named Server1 that runs Windows Server 2016. Server1 uses managed disks.<br><br>You need to move Server1 to Subscription2. The solution must minimize administration effort.<br><br>What should you do first?",
+    "choices": [
+      {
+        "label": "Create a new virtual machine in Subscription2",
+        "isCorrect": 0
+      },
+      {
+        "label": "In Subscription2, create a copy of the virtual disk",
+        "isCorrect": 0
+      },
+      {
+        "label": "Create a snapshot of the virtual disk",
+        "isCorrect": 0
+      },
+      {
+        "label": "From Azure PowerShell, run the Move-AzureRmResource cmdlet",
+        "isCorrect": 1
+      }
+    ]
+  },
+  {
+    "question": "IMAGE IN QUESTION 25 PAGE 45<br><br>You have an Azure subscription.<br><br>You have an on-premises virtual machine named VM1. The settings for VM1 are shown in the exhibit. (Click the Exhibit tab.)<br><br>You need to ensure that you can use the disks attached to VM1 as a template for Azure virtual machines.<br><br>What should you modify on VM1?",
+    "choices": [
+      {
+        "label": "the processor",
+        "isCorrect": 0
+      },
+      {
+        "label": "the memory",
+        "isCorrect": 0
+      },
+      {
+        "label": "Integration Services",
+        "isCorrect": 0
+      },
+      {
+        "label": "the hard drive",
+        "isCorrect": 1
+      },
+      {
+        "label": "the network adapters",
+        "isCorrect": 0
+      }
+    ]
+  },
+  {
+    "question": "IMAGE QUESTION 21 PAGE 17<br><br>You have a virtual network named VNet1 as shown in the exhibit. (Click the Exhibit tab.)<br><br>No devices are connected to VNet1.<br><br>You plan to peer VNet1 to another virtual network named VNet2 in the same region. VNet2 has an address space of 10.2.0.0/16.<br><br>You need to create the peering.<br><br>What should you do first?",
+    "choices": [
+      {
+        "label": "Add a gateway subnet to VNet1.",
+        "isCorrect": 0
+      },
+      {
+        "label": "Create a subnet on VNet1 and VNet2",
+        "isCorrect": 0
+      },
+      {
+        "label": "Modify the address space of VNet1",
+        "isCorrect": 1
+      },
+      {
+        "label": "Configure a service endpoint on VNet2",
+        "isCorrect": 0
+      }
+    ]
+  },
+  {"question": "IMAGE ON QUESTION 26 PAGE 47<br><br>You have an Azure policy as shown in the following exhibit.<br><br>What is the effect of the policy?", "choices": [{"label": "You can create Azure SQL servers in any resource group within Subscription 1.", "isCorrect": 0},{"label": "You can create Azure SQL servers in ContosoRG1 only.", "isCorrect": 1},{"label": "You are prevented from creating Azure SQL Servers in ContosoRG1 only.", "isCorrect": 0},{"label": "You are prevented from creating Azure SQL servers anywhere in Subscription 1.", "isCorrect": 0}]},
+  {"question": "You have an Azure subscription that contains a resource group named RG1. RG1 contains 100 virtual machines.<br><br>Your company has three cost centers named Manufacturing, Sales, and Finance.<br><br>You need to associate each virtual machine to a specific cost center.<br><br>What should you do?", "choices": [{"label": "Add an extension to the virtual machines", "isCorrect": 0},{"label": "Modify the inventory settings of the virtual machine", "isCorrect": 0},{"label": "Assign tags to the virtual machines", "isCorrect": 1},{"label": "Configure locks for the virtual machine", "isCorrect": 0}]},
+  {"question": "You have an Azure subscription that contains two storage accounts named storagecontoso1 and storagecontoso2. Each storage account contains a queue service, a table service, and a blob service.<br><br>You develop two apps named App1 and App2. You need to configure the apps to store different types of data to all the storage services on both the storage accounts.<br><br>How many endpoints should you configure for each app?", "choices": [{"label": "2", "isCorrect": 1},{"label": "3", "isCorrect": 0},{"label": "6", "isCorrect": 0},{"label": "12", "isCorrect": 0}]},
+  {"question": "You have an Azure subscription that contains three virtual networks named VNet1, VNet2, and VNet3. VNet2 contains a virtual appliance named VM2 that operates as a router.<br><br>You are configuring the virtual networks in a hub and spoke topology that uses VNet2 as the hub network.<br><br>You plan to configure peering between VNet1 and VNet2 and between VNet2 and VNet3.<br><br>You need to provide connectivity between VNet1 and VNet3 through VNet2.<br><br>Which two configurations should you perform? Each correct answer presents part of the solution.<br><br>NOTE: Each correct selection is worth one point.", "choices": [{"label": "On the peering connections, allow forwarded traffic", "isCorrect": 0},{"label": "Create a route filter", "isCorrect": 0},{"label": "On the peering connections, allow gateway transit", "isCorrect": 1},{"label": "Create route tables and assign the table to subnets", "isCorrect": 0},{"label": "On the peering, use remote gateways", "isCorrect": 1}]},
+  {"question": "You are planning to create a virtual network that has a scale set that contains six virtual machines (VMs).<br><br>A monitoring solution on a different network will need access to the VMs inside the scale set.<br><br>You need to define public access to the VMs.<br><br>Solution: Deploy a standalone VM that has a public IP address to the virtual network.<br><br>Does the solution meet the goal?", "choices": [{"label": "Yes", "isCorrect": 1},{"label": "No", "isCorrect": 0}]},
+  {"question": "You are planning to create a virtual network that has a scale set that contains six virtual machines (VMs).<br><br>A monitoring solution on a different network will need access to the VMs inside the scale set.<br><br>You need to define public access to the VMs.<br><br>Solution: Implement an Azure Load Balancer.<br><br>Does the solution meet the goal?", "choices": [{"label": "Yes", "isCorrect": 0},{"label": "No", "isCorrect": 1}]},
+  {"question": "You are planning to create a virtual network that has a scale set that contains six virtual machines (VMs).<br><br>A monitoring solution on a different network will need access to the VMs inside the scale set.<br><br>You need to define public access to the VMs.<br><br>Solution: Design a scale set to automatically assign public IP addresses to all VMs.<br><br>Does the solution meet the goal?", "choices": [{"label": "Yes", "isCorrect": 0},{"label": "No", "isCorrect": 1}]},
+  {"question": "You have an Azure Kubernetes Service (AKS) cluster named Clus1 in a resource group named RG1.<br><br>An administrator plans to manage Clus1 from an Azure AD-joined device.<br><br>You need to ensure that the administrator can deploy the YAML application manifest file for a container application.<br><br>You install the Azure CLI on the device.<br><br>Which command should you run next?", "choices": [{"label": "kubectl get nodes", "isCorrect": 0},{"label": "az aks install-cli", "isCorrect": 0},{"label": "kubectl apply –f appl.yaml", "isCorrect": 1},{"label": "az aks get-credentials --resource-group RG1 --name Clus1", "isCorrect": 0}]},
+  {"question": "You are planning to create a virtual network that has a scale set that contains six virtual machines (VMs).<br><br>A monitoring solution on a different network will need access to the VMs inside the scale set.<br><br>You need to define public access to the VMs.<br><br>Solution: Use Remote Desktop Protocol (RDP) to connect to the VM in the scale set.<br><br>Does the solution meet the goal?", "choices": [{"label": "Yes", "isCorrect": 1},{"label": "No", "isCorrect": 0}]},
+  {"question": "IMAGE ON QUESTION 37 PAGE 77<br><br>You have an Azure subscription that contains the virtual networks shown in the following table.<br><br>You need to recommend a connectivity solution that will enable the virtual machines on VNET1 and VNET2 to communicate through the Microsoft backbone infrastructure.<br><br>What should you include in the recommendation?", "choices": [{"label": "Azure ExpressRoute", "isCorrect": 0},{"label": "peering", "isCorrect": 1},{"label": "a site-to-site VPN", "isCorrect": 0},{"label": "a point-to-site VPN", "isCorrect": 0}]},
+  {"question": "You create an Azure virtual machine named VM1 in a resource group named RG1.<br><br>You discover that VM1 performs slower than expected.<br><br>You need to capture a network trace on VM1.<br><br>What should you do?", "choices": [{"label": "From Diagnostic settings for VM1, configure the performance counters to include network counters.", "isCorrect": 0},{"label": "From the VM1 blade, configure Connection troubleshoot.", "isCorrect": 0},{"label": "From the VM1 blade, install performance diagnostics and run advanced performance analysis", "isCorrect": 1},{"label": "From Diagnostic settings for VM1, configure the log level of the diagnostic agent.", "isCorrect": 0}]},
+  {"question": "IMAGE ON QUESTION 39 PAGE 78<br><br>You have an Azure subscription that contains the resource groups shown in the following table.<br><br>The subscription contains the storage accounts shown in the following table.<br><br>You create a Recovery Services vault named Vault1 in RG1 in the West US location.<br><br>You need to identify which storage accounts can be used to archive the diagnostics logs of Vault1.<br><br>Which storage accounts should you identify?", "choices": [{"label": "Storage1 only", "isCorrect": 0},{"label": "Storage2 only", "isCorrect": 0},{"label": "Storage3 only", "isCorrect": 0},{"label": "Storage1 or Storage2 only", "isCorrect": 1},{"label": "Storage1 or Storage3 only", "isCorrect": 1}]},
+  {"question": "IMAGE ON QUESTION 41 PAGE 83<br><br>You have an Azure subscription.<br><br>You create a custom role in Azure by using the following Azure Resource Manager template.<br><br>You assign the role to a user named User1.<br><br>Which action can User1 perform?", "choices": [{"label": "Delete virtual machines.", "isCorrect": 0},{"label": "Create resource groups.", "isCorrect": 0},{"label": "Create virtual machines.", "isCorrect": 0},{"label": "Create support requests.", "isCorrect": 1}]},
+  {"question": "A company plans to use third-party application software to perform complex data analysis processes. The software will use up to 500 identical virtual machines (VMs) based on an Azure Marketplace VM image.<br><br>You need to design the infrastructure for the third-party application server. The solution must meet the following requirements:<br><br>The number of VMs that are running at any given point in time must change when the user workload changes.<br><br>When a new version of the application is available in Azure Marketplace it must be deployed without causing application downtime.<br><br>Use VM scale sets.<br><br>Minimize the need for ongoing maintenance.<br><br>Which two technologies should you recommend? Each correct answer presents part of the solution.<br><br>NOTE: Each correct selection is worth one point.", "choices": [{"label": "single storage account", "isCorrect": 0},{"label": "autoscale", "isCorrect": 1},{"label": "single placement group", "isCorrect": 0},{"label": "managed disks", "isCorrect": 1}]},
+  {"question": "IMAGE ON QUESTION 43 PAGE 86<br><br>You have an Azure subscription that contains the storage accounts shown in the following table.<br><br>All storage accounts contain blobs only.<br><br>You need to implement several lifecycle management rules for all storage accounts.<br><br>What should you do first?", "choices": [{"label": "Upgrade contosostorage1 and contosostorage2 to General Purpose V2 accounts.", "isCorrect": 1},{"label": "Move 5 TB of blob data from contosostorage3 to contosostorage4.", "isCorrect": 0},{"label": "Move 5 TB of blob data from contosostorage1 to contosostorage2.", "isCorrect": 0},{"label": "Recreate contosostorage5 as General Purpose V2 account.", "isCorrect": 0}]},
+  {"question": "You have an Azure Active Directory (Azure AD) tenant named contoso.com.<br><br>A user named Admin1 attempts to create an access review from the Azure Active Directory admin center and discovers that the Access reviews settings are unavailable. Admin1 discovers that all the other Identity Governance settings are available.<br><br>Admin1 is assigned the User administrator, Compliance administrator, and Security administrator roles.<br><br>You need to ensure that the Admin1 can create access reviews in contoso.com.<br><br>Solution: You consent to Azure AD Privileged Identity Management (PIM).<br><br>Does this meet the goal?", "choices": [{"label": "Yes", "isCorrect": 1},{"label": "No", "isCorrect": 0}]},
+  {"question": "You have an Azure Active Directory (Azure AD) tenant named contoso.com.<br><br>A user named Admin1 attempts to create an access review from the Azure Active Directory admin center and discovers that the Access reviews settings are unavailable. Admin1 discovers that all the other Identity Governance settings are available.<br><br>Admin1 is assigned the User administrator, Compliance administrator, and Security administrator roles.<br><br>You need to ensure that the Admin1 can create access reviews in contoso.com.<br><br>Solution: You assign the Global administrator role to Admin1.<br><br>Does this meet the goal?", "choices": [{"label": "Yes", "isCorrect": 0},{"label": "No", "isCorrect": 1}]},
+  {"question": "You have an Azure Active Directory (Azure AD) tenant named contoso.com.<br><br>A user named Admin1 attempts to create an access review from the Azure Active Directory admin center and discovers that the Access reviews settings are unavailable. Admin1 discovers that all the other Identity Governance settings are available.<br><br>Admin1 is assigned the User administrator, Compliance administrator, and Security administrator roles.<br><br>You need to ensure that the Admin1 can create access reviews in contoso.com.<br><br>Solution: You purchase an Azure Directory Premium P2 license for contoso.com.<br><br>Does this meet the goal?", "choices": [{"label": "Yes", "isCorrect": 0},{"label": "No", "isCorrect": 1}]},
+  {"question": "You have a resource group named RG1 that contains the following:<br><br>A virtual network that contains two subnets named Subnet1 and Subnet2<br><br>An Azure Storage account named contososa1<br><br>An Azure firewall deployed to Subnet2<br><br>You need to ensure that contososa1 is accessible from Subnet1 over the Azure backbone network.<br><br>What should you do?", "choices": [{"label": "Deploy an Azure firewall to Subnet1.", "isCorrect": 0},{"label": "Remove the Azure firewall.", "isCorrect": 0},{"label": "Implement a virtual network service endpoint.", "isCorrect": 1},{"label": "Create a stored access policy for contososa1.", "isCorrect": 0}]},
+  {"question": "CASE STUDY PAGE 91<br><br>You need to resolve the licensing issue before you attempt to assign the license again.<br><br>What should you do?", "choices": [{"label": "From the Directory role blade, modify the directory role", "isCorrect": 0},{"label": "From the Groups blade, invite the user accounts to a new group", "isCorrect": 0},{"label": "From the Profile blade, modify the usage location", "isCorrect": 1}]},
+  {"question": "CASE STUDY PAGE 91<br><br>You need to define a custom domain name for Azure AD to support the planned infrastructure.<br><br>Which domain name should you use?", "choices": [{"label": "ad.humongousinsurance.com", "isCorrect": 0},{"label": "humongousinsurance.local", "isCorrect": 0},{"label": "humongousinsurance.com", "isCorrect": 1},{"label": "humongousinsurance.onmicrosoft.com", "isCorrect": 0}]},
+  {"question": "CASE STUDY PAGE 95<br><br>What should you create to configure AG2?", "choices": [{"label": "multi-site listeners", "isCorrect": 1},{"label": "URL path-based routing rules", "isCorrect": 0},{"label": "basic routing rules", "isCorrect": 0},{"label": "an additional public IP address", "isCorrect": 0},{"label": "basic listeners", "isCorrect": 0}]},
+  {"question": "QUESTION 1 PAGE 99<br><br>You have an Azure subscription that contains the resources shown in the following table.<br><br>Subnet1 is on VNET1. VM1 connects to Subnet1.<br><br>You plan to create a virtual network gateway on VNET1.<br><br>You need to prepare the environment for the planned virtual network gateway.<br><br>What are two ways to achieve this goal? Each correct answer presents a complete solution.<br><br>NOTE: Each correct selection is worth one point.", "choices": [{"label": "Modify the address space used by VNET1.", "isCorrect": 1},{"label": "Modify the address space used by Subnet1.", "isCorrect": 0},{"label": "Create a subnet named GatewaySubnet on VNET1.", "isCorrect": 0},{"label": "Create a local network gateway.", "isCorrect": 0},{"label": "Delete Subnet1.", "isCorrect": 1}]},
+  {"question": "A company hosts virtual machines (VMs) in an on-premises datacenter and in Azure. The on-premises and Azure-based VMs communicate using ExpressRoute.<br><br>The company wants to be able to continue regular operations if the ExpressRoute connection fails. Failover connections must use the Internet and must not require<br><br>Multiprotocol Label Switching (MPLS) support.<br><br>You need to recommend a solution that provides continued operations.<br><br>What should you recommend?", "choices": [{"label": "Set up a second ExpressRoute connection.", "isCorrect": 0},{"label": "Increase the bandwidth of the existing ExpressRoute connection.", "isCorrect": 0},{"label": "Increase the bandwidth for the on-premises internet connection.", "isCorrect": 0},{"label": "Set up a VPN connection.", "isCorrect": 1}]},
+  {"question": "You have a web app named WebApp1 that uses an Azure App Service plan named Plan1. Plan1 uses the D1 pricing tier and has an instance count of 1.<br><br>You need to ensure that all connections to WebApp1 use HTTPS.<br><br>What should you do first?", "choices": [{"label": "Scale up Plan1.", "isCorrect": 1},{"label": "Modify the connection strings for WebApp1.", "isCorrect": 0},{"label": "Scale out Plan1.", "isCorrect": 0},{"label": "Disable anonymous access to WebApp1.", "isCorrect": 0}]},
+  {"question": "You have an Azure subscription that contains an Azure Service Fabric cluster and a Service Fabric application named FabricApp.<br><br>You develop and package a Service Fabric application named AppPackage. AppPackage is saved in a compressed folder named AppPackage.zip.<br><br>You upload AppPackage.zip to an external store.<br><br>You need to register AppPackage in the Azure subscription.<br><br>What should you do first?", "choices": [{"label": "Run the New-ServiceFabricApplication cmdlet.", "isCorrect": 0},{"label": "Repackage the application in a file named App.sfpkg.", "isCorrect": 1},{"label": "Create a new Service Fabric cluster.", "isCorrect": 0},{"label": "Copy AppPackage.zip to a blob storage account.", "isCorrect": 0}]},
+  {"question": "You develop an entertainment application where users can buy and trade virtual real estate. The application must scale to support thousands of users.<br><br>The current architecture includes five Azure virtual machines (VM) that connect to an Azure SQL Database for account information and Azure Table Storage for<br><br>backend services. A user interacts with these components in the cloud at any given time.<br><br>Routing Service – Routes a request to the appropriate service and must not persist data across sessions.<br><br>Account Service – Stores and manages all account information and authentication and requires data to persist across sessions<br><br>User Service – Stores and manages all user information and requires data to persist across sessions.<br><br>Housing Network Service – Stores and manages the current real-estate economy and requires data to persist across sessions.<br><br>Trade Service – Stores and manages virtual trade between accounts and requires data to persist across sessions.<br><br>Due to volatile user traffic, a microservices solution is selected for scale agility.<br><br>You need to migrate to a distributed microservices solution on Azure Service Fabric.<br><br>Solution: Create a Service Fabric Cluster with a stateful Reliable Service for each component.<br><br>Does the solution meet the goal?", "choices": [{"label": "Yes", "isCorrect": 0},{"label": "No", "isCorrect": 1}]},
+  {"question": "You develop an entertainment application where users can buy and trade virtual real estate. The application must scale to support thousands of users.<br><br>The current architecture includes five Azure virtual machines (VM) that connect to an Azure SQL Database for account information and Azure Table Storage for<br><br>backend services. A user interacts with these components in the cloud at any given time.<br><br>Routing Service – Routes a request to the appropriate service and must not persist data across sessions.<br><br>Account Service – Stores and manages all account information and authentication and requires data to persist across sessions<br><br>User Service – Stores and manages all user information and requires data to persist across sessions.<br><br>Housing Network Service – Stores and manages the current real-estate economy and requires data to persist across sessions.<br><br>Trade Service – Stores and manages virtual trade between accounts and requires data to persist across sessions.<br><br>Due to volatile user traffic, a microservices solution is selected for scale agility.<br><br>You need to migrate to a distributed microservices solution on Azure Service Fabric.<br><br>Solution: Create a Service Fabric Cluster with a stateless Reliable Service for Routing Service. Create stateful Reliable Services for all other components.<br><br>Does the solution meet the goal?", "choices": [{"label": "Yes", "isCorrect": 1},{"label": "No", "isCorrect": 0}]},
+  {"question": "You develop an entertainment application where users can buy and trade virtual real estate. The application must scale to support thousands of users.<br><br>The current architecture includes five Azure virtual machines (VM) that connect to an Azure SQL Database for account information and Azure Table Storage for<br><br>backend services. A user interacts with these components in the cloud at any given time.<br><br>Routing Service – Routes a request to the appropriate service and must not persist data across sessions.<br><br>Account Service – Stores and manages all account information and authentication and requires data to persist across sessions<br><br>User Service – Stores and manages all user information and requires data to persist across sessions.<br><br>Housing Network Service – Stores and manages the current real-estate economy and requires data to persist across sessions.<br><br>Trade Service – Stores and manages virtual trade between accounts and requires data to persist across sessions.<br><br>Due to volatile user traffic, a microservices solution is selected for scale agility.<br><br>You need to migrate to a distributed microservices solution on Azure Service Fabric.<br><br>Solution: Create a Service Fabric Cluster with a stateful Reliable Service for Routing Service. Deploy a Guest Executable to Service Fabric for each component.<br><br>Does the solution meet the goal?", "choices": [{"label": "Yes", "isCorrect": 0},{"label": "No", "isCorrect": 1}]},
+  {"question": "You create an Azure Time Series Insights event handler. You need to send data over the network as efficiently as possible and optimize query performance.<br><br>What should you do?", "choices": [{"label": "Create a query plan", "isCorrect": 0},{"label": "Send all properties", "isCorrect": 0},{"label": "Use a Tag ID", "isCorrect": 0},{"label": "Use reference data", "isCorrect": 1}]},
+  {"question": "You are creating an IoT solution using Azure Time Series Insights.<br><br>You configure the environment to ensure that all data for the current year is available.<br><br>What should you do?", "choices": [{"label": "Add a disaster recovery (DR) strategy.", "isCorrect": 0},{"label": "Set a value for the Data retention time setting.", "isCorrect": 0},{"label": "Change the pricing tier.", "isCorrect": 0},{"label": "Create a reference data set.", "isCorrect": 1}]},
+  {"question": "You have an Azure subscription named Subscription1.<br><br>You have 5 TB of data that you need to transfer to Subscription1.<br><br>You plan to use an Azure Import/Export job.<br><br>What can you use as the destination of the imported data?", "choices": [{"label": "an Azure Cosmos DB database", "isCorrect": 0},{"label": "Azure SQL Database", "isCorrect": 0},{"label": "Azure File Storage", "isCorrect": 1},{"label": "Azure Data Lake Store", "isCorrect": 0}]},
+  {"question": "QUESTION 12 PAGE 107<br><br>You have an Azure subscription that contains the resources in the following table.<br><br>Store1 contains a file share named Data. Data contains 5,000 files.<br><br>You need to synchronize the files in Data to an on-premises server named Server1.<br><br>Which three actions should you perform? Each correct answer presents part of the solution.<br><br>NOTE: Each correct selection is worth one point.", "choices": [{"label": "Download an automation script", "isCorrect": 0},{"label": "Create a sync group", "isCorrect": 1},{"label": "Install the Azure File Sync agent on Server1", "isCorrect": 1},{"label": "Create a container instance", "isCorrect": 0},{"label": "Register Server1", "isCorrect": 1}]},
+  {"question": "You plan to back up an Azure virtual machine named VM1.<br><br>You discover that the Backup Pre-Check status displays a status of Warning.<br><br>What is a possible cause of the Warning status?", "choices": [{"label": "VM1 does not have the latest version of WaAppAgent.exe installed", "isCorrect": 1},{"label": "A Recovery Services vault is unavailable", "isCorrect": 0},{"label": "VM1 has an unmanaged disk", "isCorrect": 0},{"label": "VM1 is stopped", "isCorrect": 0}]},
+  {"question": "QUESTION 14 PAGE 108<br><br>You have an Azure subscription named Subscription1. Subscription1 contains a virtual machine named VM1. You have a computer Computer1 that runs Windows 10. Computer1 is connected to the Internet.<br><br>You add a network interface named Interface1 to VM1 as shown in the exhibit. (Click the Exhibit tab.)<br><br>From Computer1, you attempt to connect to VM1 by using Remote Desktop, but the connection fails.<br><br>You need to establish a Remote Desktop connection to VM1.<br><br>What should you do first?", "choices": [{"label": "Attach a network interface", "isCorrect": 0},{"label": "Start VM1", "isCorrect": 1},{"label": "Delete the DenyAllOutBound outbound port rule", "isCorrect": 0},{"label": "Delete the DenyAllInBound inbound port rule", "isCorrect": 0}]},
+  {"question": "You are designing an Azure solution.<br><br>The solution must meet the following requirements:<br><br>Distribute traffic to different pools of dedicated virtual machines (VMs) based on rules<br><br>Provide SSL offloading capabilities<br><br>You need to recommend a solution to distribute network traffic.<br><br>Which technology should you recommend?", "choices": [{"label": "server-level firewall rules", "isCorrect": 0},{"label": "Azure Application Gateway", "isCorrect": 1},{"label": "Azure Traffic Manager", "isCorrect": 0},{"label": "Azure Load Balancer", "isCorrect": 0}]},
+  {"question": "You develop an entertainment application where users can buy and trade virtual real estate. The application must scale to support thousands of users.<br><br>The current architecture includes five Azure virtual machines (VM) that connect to an Azure SQL Database for account information and Azure Table Storage for<br><br>backend services. A user interacts with these components in the cloud at any given time.<br><br>Routing Service – Routes a request to the appropriate service and must not persist data across sessions.<br><br>Account Service – Stores and manages all account information and authentication and requires data to persist across sessions<br><br>User Service – Stores and manages all user information and requires data to persist across sessions.<br><br>Housing Network Service – Stores and manages the current real-estate economy and requires data to persist across sessions.<br><br>Trade Service – Stores and manages virtual trade between accounts and requires data to persist across sessions.<br><br>Due to volatile user traffic, a microservices solution is selected for scale agility.<br><br>You need to migrate to a distributed microservices solution on Azure Service Fabric.<br><br>Solution: Deploy a Windows container to Azure Service Fabric for each component.<br><br>Does the solution meet the goal?", "choices": [{"label": "Yes", "isCorrect": 0},{"label": "No", "isCorrect": 1}]},
+  {"question": "QUESTION 17 PAGE 112<br><br>You have an Azure subscription that contains the storage accounts shown in the following table.<br><br>You enable Azure Advanced Threat Protection (ATP) for all the storage accounts.<br><br>You need to identify which storage accounts will generate Azure ATP alerts.<br><br>Which two storage accounts should you identify? Each correct answer presents part of the solution.<br><br>NOTE: Each correct selection is worth one point.", "choices": [{"label": "storagecontoso1", "isCorrect": 1},{"label": "storagecontoso2", "isCorrect": 0},{"label": "storagecontoso3", "isCorrect": 0},{"label": "storagecontoso4", "isCorrect": 0},{"label": "storagecontoso5", "isCorrect": 1}]},
+  {"question": "You have an Azure Active Directory (Azure AD) tenant named Adatum and an Azure Subscription named Subscription1. Adatum contains a group named<br><br>Developers. Subscription1 contains a resource group named Dev.<br><br>You need to provide the Developers group with the ability to create Azure logic apps in the Dev resource group.<br><br>Solution: On Subscription1, you assign the DevTest Labs User role to the Developers group.<br><br>Does this meet the goal?", "choices": [{"label": "Yes", "isCorrect": 0},{"label": "No", "isCorrect": 1}]},
+  {"question": "You have an Azure Active Directory (Azure AD) tenant named Adatum and an Azure Subscription named Subscription1. Adatum contains a group named<br><br>Developers. Subscription1 contains a resource group named Dev.<br><br>You need to provide the Developers group with the ability to create Azure logic apps in the Dev resource group.<br><br>Solution: On Dev, you assign the Logic App Contributor role to the Developers group.<br><br>Does this meet the goal?", "choices": [{"label": "Yes", "isCorrect": 0},{"label": "No", "isCorrect": 1}]},
+  {"question": "You have an Azure Active Directory (Azure AD) tenant named Adatum and an Azure Subscription named Subscription1. Adatum contains a group named<br><br>Developers. Subscription1 contains a resource group named Dev.<br><br>You need to provide the Developers group with the ability to create Azure logic apps in the Dev resource group.<br><br>Solution: On Dev, you assign the Contributor role to the Developers group.<br><br>Does this meet the goal?", "choices": [{"label": "Yes", "isCorrect": 1},{"label": "No", "isCorrect": 0}]},
+  {"question": "A company backs up data to on-premises servers at their main facility. The company currently has 30 TB of archived data that infrequently used. The facility has download speeds of 100 Mbps and upload speeds of 20 Mbps.<br><br>You need to securely transfer all backups to Azure Blob Storage for long-term archival. All backup data must be sent within seven days.<br><br>Solution: Backup data to local disks and use the Azure Import/Export service to send backups to Azure Blob Storage.<br><br>Does this meet the goal?", "choices": [{"label": "Yes", "isCorrect": 1},{"label": "No", "isCorrect": 0}]},
+  {"question": "A company backs up data to on-premises servers at their main facility. The company currently has 30 TB of archived data that infrequently used. The facility has download speeds of 100 Mbps and upload speeds of 20 Mbps.<br><br>You need to securely transfer all backups to Azure Blob Storage for long-term archival. All backup data must be sent within seven days.<br><br>Solution: Create a file share in Azure Files. Mount the file share to the server and upload the files to the file share. Transfer the files to Azure Blob Storage.<br><br>Does this meet the goal?", "choices": [{"label": "Yes", "isCorrect": 0},{"label": "No", "isCorrect": 1}]},
+  {"question": "A company backs up data to on-premises servers at their main facility. The company currently has 30 TB of archived data that infrequently used. The facility has download speeds of 100 Mbps and upload speeds of 20 Mbps.<br><br>You need to securely transfer all backups to Azure Blob Storage for long-term archival. All backup data must be sent within seven days.<br><br>Solution: Use the Set-AzureStorageBlobContent Azure PowerShell command to copy all backups asynchronously to Azure Blob Storage.<br><br>Does this meet the goal?", "choices": [{"label": "Yes", "isCorrect": 0},{"label": "No", "isCorrect": 1}]},
+  {"question": "You have an on-premises network that contains a Hyper-V host named Host1. Host1 runs Windows Server 2016 and hosts 10 virtual machines that run Windows<br><br>Server 2016.<br><br>You plan to replicate the virtual machines to Azure by using Azure Site Recovery.<br><br>You create a Recovery Services vault named ASR1 and a Hyper-V site named Site1.<br><br>You need to add Host1 to ASR1.<br><br>What should you do?", "choices": [{"label": "Download the installation file for the Azure Site Recovery Provider., Download the storage account key., Install the Azure Site Recovery Provider on each virtual machine and register the virtual machines.", "isCorrect": 0},{"label": "Download the installation file for the Azure Site Recovery Provider., Download the vault registration key., Install the Azure Site Recovery Provider on Host1 and register the server.", "isCorrect": 1},{"label": "Download the installation file for the Azure Site Recovery Provider., Download the storage account key., Install the Azure Site Recovery Provider on Host1 and register the server.", "isCorrect": 0},{"label": "Download the installation file for the Azure Site Recovery Provider., Download the vault registration key., Install the Azure Site Recovery Provider on each virtual machine and register the virtual machines.", "isCorrect": 0}]},
+  {"question": "question 25 page 118<br><br>You plan to migrate an on-premises Hyper-V environment to Azure by using Azure Site Recovery. The Hyper-V environment is managed by using Microsoft System<br><br>Center Virtual Machine Manager (VMM).<br><br>The Hyper-V environment contains the virtual machines in the following table:<br><br>Which virtual machine can be migrated by using Azure Site Recovery?", "choices": [{"label": "FS1", "isCorrect": 0},{"label": "CA1", "isCorrect": 0},{"label": "DC1", "isCorrect": 0},{"label": "SQL1", "isCorrect": 1}]},
+  {"question": "You have an Azure subscription named Subscription1 that contains two Azure networks named VNet1 and VNet2. VNet1 contains a VPN gateway named VPNGW1 that uses static routing. There is a site-to-site VPN connection between your on-premises network and VNet1.<br><br>On a computer named Client1 that runs Windows 10, you configure a point-to-site VPN connection to VNet1.<br><br>You configure virtual network peering between VNet1 and VNet2. You verify that you can connect to VNet2 from the on-premises network. Client1 is unable to connect to VNet2.<br><br>You need to ensure that you can connect Client1 to VNet2.<br><br>What should you do?", "choices": [{"label": "Select Allow gateway transit on VNet1.", "isCorrect": 0},{"label": "Download and re-install the VPN client configuration package on Client1.", "isCorrect": 1},{"label": "Enable BGP on VPNGW1.", "isCorrect": 0},{"label": "Select Allow gateway transit on VNet2.", "isCorrect": 0}]},
+  {"question": "You have a Microsoft SQL Server Always On availability group on Azure virtual machines.<br><br>You need to configure an Azure internal load balancer as a listener for the availability group.<br><br>What should you do?", "choices": [{"label": "Create an HTTP health probe on port 1433.", "isCorrect": 0},{"label": "Set Session persistence to Client IP.", "isCorrect": 0},{"label": "Set Session persistence to Client IP and protocol.", "isCorrect": 0},{"label": "Enable Floating IP.", "isCorrect": 1}]},
+  {"question": "You set the multi-factor authentication status for a user named admin1@contoso.com to Enabled.<br><br>Admin1 accesses the Azure portal by using a web browser.<br><br>Which additional security verifications can Admin1 use when accessing the Azure portal?", "choices": [{"label": "an app password, a text message that contains a verification code, and a verification code sent from the Microsoft Authenticator app", "isCorrect": 0},{"label": "a phone call, a text message that contains a verification code, and a notification or a verification code sent from the Microsoft Authenticator app", "isCorrect": 1},{"label": "a phone call, an email message that contains a verification code, and a text message that contains an app password", "isCorrect": 0},{"label": "an app password, a text message that contains a verification code, and a notification sent from the Microsoft Authenticator app", "isCorrect": 0}]},
+  {"question": "You have an Azure Active Directory (Azure AD) tenant.<br><br>All administrators must enter a verification code to access the Azure portal.<br><br>You need to ensure that the administrators can access the Azure portal only from your on-premises network.<br><br>What should you configure?", "choices": [{"label": "the default for all the roles in Azure AD Privileged Identity Management", "isCorrect": 0},{"label": "an Azure AD Identity Protection user risk policy", "isCorrect": 0},{"label": "an Azure AD Identity Protection sign-in risk policy", "isCorrect": 0},{"label": "the multi-factor authentication service settings", "isCorrect": 1}]},
+  {"question": "You have an Azure subscription named Subscription1 that contains a virtual network named VNet1. VNet1 is in a resource group named RG1.<br><br>Subscription1 has a user named User1. User1 has the following roles:<br><br>Reader<br><br>Security Admin<br><br>Security Reader<br><br>You need to ensure that User1 can assign the Reader role for VNet1 to other users.<br><br>What should you do?", "choices": [{"label": "Assign User1 the Owner role for VNet1.", "isCorrect": 1},{"label": "Assign User1 the Network Contributor role for VNet1.", "isCorrect": 0},{"label": "Remove User1 from the Security Reader and Reader roles for Subscription1. Assign User1 the Contributor role for Subscription1.", "isCorrect": 0},{"label": "Remove User1 from the Security Reader and Reader roles for Subscription1.", "isCorrect": 0}]},
+  {"question": "You are building a custom Azure function app to connect to Azure Event Grid.<br><br>You need to ensure that resources are allocated dynamically to the function app. Billing must be based on the executions of the app.<br><br>What should you configure when you create the function app?", "choices": [{"label": "the Windows operating system and the App Service plan hosting plan", "isCorrect": 0},{"label": "the Docker container and an App Service plan that uses the B1 pricing tier", "isCorrect": 0},{"label": "the Windows operating system and the Consumption plan hosting plan", "isCorrect": 1},{"label": "the Docker container and an App Service plan that uses the S1 pricing tier", "isCorrect": 0}]},
+  {"question": "You have an Azure Service Bus.<br><br>You need to implement a Service Bus queue that guarantees first-in-first-out (FIFO) delivery of messages.<br><br>What should you do?", "choices": [{"label": "Enable partitioning", "isCorrect": 0},{"label": "Enable duplicate detection", "isCorrect": 0},{"label": "Set the Lock Duration setting to 10 seconds", "isCorrect": 0},{"label": "Enable sessions", "isCorrect": 1},{"label": "Set the Max Size setting of the queue to 5 GB", "isCorrect": 0}]},
+  {"question": "You have an Azure subscription that contains a policy-based virtual network gateway named GW1 and a virtual network named VNet1.<br><br>You need to ensure that you can configure a point-to-site connection from VNet1 to an on-premises computer.<br><br>Which two actions should you perform? Each correct answer presents part of the solution.<br><br>NOTE: Each correct selection is worth one point.", "choices": [{"label": "Add a service endpoint to VNet1.", "isCorrect": 0},{"label": "Add a public IP address space to VNet1.", "isCorrect": 0},{"label": "Create a route-based virtual network gateway.", "isCorrect": 1},{"label": "Reset GW1.", "isCorrect": 0},{"label": "Delete GW1.", "isCorrect": 1},{"label": "Add a connection to GW1.", "isCorrect": 0}]},
+  {"question": "question 35 page 126<br><br>You create a new Azure subscription. You create a resource group named RG1. In RG1, you create the resources shown in the following table.<br><br>You need to configure an encrypted tunnel between your on-premises network and VNET1.<br><br>Which two additional resources should you create in Azure? Each correct answer presents part of the solution.<br><br>NOTE: Each correct selection is worth one point.", "choices": [{"label": "a site-to-site connection", "isCorrect": 1},{"label": "a VPN gateway", "isCorrect": 1},{"label": "a VNet-to VNet connection", "isCorrect": 0},{"label": "a local network gateway", "isCorrect": 1},{"label": "a point-to-site configuration", "isCorrect": 0}]},
+  {"question": "You have an Azure subscription.<br><br>You have an on-premises file server named Server1 that runs Windows Server 2019.<br><br>You manage Server1 by using Windows Admin Center.<br><br>You need to ensure that if Server1 fails, you can recover the data from Azure.<br><br>Solution: From the Azure portal, you create a Recovery Services vault. On VM1, you install the Azure Backup agent and you schedule a backup.<br><br>Does this meet the goal?", "choices": [{"label": "Yes", "isCorrect": 0},{"label": "No", "isCorrect": 1}]},
+  {"question": "You have an Azure subscription.<br><br>You have an on-premises file server named Server1 that runs Windows Server 2019.<br><br>You manage Server1 by using Windows Admin Center.<br><br>You need to ensure that if Server1 fails, you can recover the data from Azure.<br><br>Solution: You create a Recovery Services vault and configure a backup by using Windows Server Backup.<br><br>Does this meet the goal?", "choices": [{"label": "Yes", "isCorrect": 0},{"label": "No", "isCorrect": 1}]},
+  {"question": "case study page 130<br><br>You need to meet the technical requirement for VM4.<br><br>What should you create and configure?", "choices": [{"label": "an Azure Logic App", "isCorrect": 0},{"label": "an Azure Service Bus", "isCorrect": 0},{"label": "an Azure Notification Hub", "isCorrect": 0},{"label": "an Azure Event Hub", "isCorrect": 1}]},
+  {"question": "question 1 page 133<br><br>You create the following Azure role definition.<br><br>You need to create Role1 by using the role definition.<br><br>Which two values should you modify before you create Role1? Each correct answer presents part of solution.<br><br>NOTE: Each correct selection is worth one point.", "choices": [{"label": "IsCustom", "isCorrect": 1},{"label": "DataActions", "isCorrect": 0},{"label": "Id", "isCorrect": 0},{"label": "AssignableScopes", "isCorrect": 1},{"label": "Description", "isCorrect": 0}]},
+  {"question": "You have an Azure App Service named WebApp1.<br><br>You plan to add a WebJob named WebJob1 to WebApp1.<br><br>You need to ensure that WebJob1 is triggered every 15 minutes.<br><br>What should you do?", "choices": [{"label": "Change the Web.config file to include the 1-31 1-12 1-7 0*/15* CRON expression", "isCorrect": 0},{"label": "From the properties of WebJob1, change the CRON expression to 0*/15****.", "isCorrect": 1},{"label": "Add a file named Settings.job to the ZIP file that contains the WebJob script. Add the 1-31 1-12 1-7 0*/15* CRON expression to the JOB file", "isCorrect": 0},{"label": "Create an Azure Automation account and add a schedule to the account. Set the recurrence for the schedule", "isCorrect": 0}]},
+  {"question": "question 3 page 135<br><br>You have an on-premises virtual machine named VM1 configured as shown in the following exhibit.<br><br>VM is started.<br><br>You need to create a new virtual machine image in Azure from VM1.<br><br>Which three actions should you perform before you create the new image? Each correct answer presents part of the solution.<br><br>NOTE: Each correct selection is worth one point.", "choices": [{"label": "Remove the Backup (volume shadow copy) integration service", "isCorrect": 0},{"label": "Generalize VM1", "isCorrect": 1},{"label": "Run Add-AzureRmVhd and specify a blob service container as the destination", "isCorrect": 1},{"label": "Run Add-AzureRmVhd and specify a file share as the destination", "isCorrect": 0},{"label": "Reduce the amount of memory to 16 GB", "isCorrect": 0},{"label": "Convert the disk type to VHD", "isCorrect": 1}]},
+  {"question": "You have an Azure App Service API that allows users to upload documents to the cloud with a mobile device. A mobile app connects to the service by using REST API calls.<br><br>When a new document is uploaded to the service, the service extracts the document metadata. Usage statistics for the app show significant increases in app usage.<br><br>The extraction process is CPU-intensive. You plan to modify the API to use a queue.<br><br>You need to ensure that the solution scales, handles request spikes, and reduces costs between request spikes.<br><br>What should you do?", "choices": [{"label": "Configure a CPU Optimized virtual machine (VM) and install the Web App service on the new instance.", "isCorrect": 0},{"label": "Configure a series of CPU Optimized virtual machine (VM) instances and install extraction logic to process a queue.", "isCorrect": 0},{"label": "Move the extraction logic into an Azure Function. Create a queue triggered function to process the queue.", "isCorrect": 1},{"label": "Configure Azure Container Service to retrieve items from a queue and run across a pool of virtual machine (VM) nodes using the extraction logic.", "isCorrect": 0}]},
+  {"question": "You create a social media application that users can use to upload images and other content.<br><br>Users report that adult content is being posted in an area of the site that is accessible to and intended for young children.<br><br>You need to automatically detect and flag potentially offensive content. The solution must not require any custom coding other than code to scan and evaluate images.<br><br>What should you implement?", "choices": [{"label": "Bing Visual Search", "isCorrect": 0},{"label": "Bing Image Search", "isCorrect": 0},{"label": "Custom Vision Search", "isCorrect": 0},{"label": "Computer Vision API", "isCorrect": 1}]},
+  {"question": "case study page 144<br><br>You need to configure a host name for WebApp2.<br><br>What should you do first?", "choices": [{"label": "In Azure AD, add contoso.com as a custom domain name", "isCorrect": 0},{"label": "In the public DNS zone of contoso.onmicrosoft.com, add an NS record", "isCorrect": 0},{"label": "In Azure AD, add webapp2.azurewebsites.net as a custom domain name", "isCorrect": 1},{"label": "In the public DNS zone of contoso.com, add a CNAME record", "isCorrect": 0}]},
+  {"question": "case study page 144<br><br>Which pricing tier should you recommend for WebApp1?", "choices": [{"label": "D1", "isCorrect": 0},{"label": "P1v2", "isCorrect": 0},{"label": "S1", "isCorrect": 1},{"label": "B1", "isCorrect": 0}]},
+  {"question": "You sign up for Azure Active Directory (Azure AD) Premium.<br><br>You need to add a user named admin1@contoso.com ad an administrator on all the computers that will be joined to the Azure AD domain.<br><br>What should you configure in Azure AD?", "choices": [{"label": "Providers from the MFA Server blade", "isCorrect": 0},{"label": "General settings from the Groups blade", "isCorrect": 0},{"label": "Device settings from the Devices blade", "isCorrect": 0},{"label": "User settings from the Users blade", "isCorrect": 1}]},
+  {"question": "Your company has an Azure subscription.<br><br>You enable multi-factor authentication (MFA) for all users.<br><br>The company’s help desk reports an increase in calls from users who receive MFA requests while they work from the company’s main office.<br><br>You need to prevent the users from receiving MFA requests when they sign in from the main office.<br><br>What should you do?", "choices": [{"label": "From Azure Active Directory (Azure AD), configure organizational relationships.", "isCorrect": 0},{"label": "From the MFA service settings, create a trusted IP range.", "isCorrect": 1},{"label": "From Conditional access in Azure Active Directory (Azure AD), create a custom control.", "isCorrect": 0},{"label": "From Conditional access in Azure Active Directory (Azure AD), create a named location.", "isCorrect": 0}]},
+  {"question": "You have an Azure virtual machine named VM1 that you use for testing. VM1 is protected by Azure Backup.<br><br>You delete VM1.<br><br>You need to remove the backup data stored for VM1.<br><br>What should you do first?", "choices": [{"label": "Delete the storage account", "isCorrect": 0},{"label": "Stop the backup", "isCorrect": 0},{"label": "Modify the backup policy", "isCorrect": 1},{"label": "Delete the Recovery Services vault", "isCorrect": 0}]},
+  {"question": "You have an Azure subscription named Subscription1. You deploy a Linux virtual machine named VM1 to Subscription1.<br><br>You need to monitor the metrics and the logs of VM1.<br><br>What should you use?", "choices": [{"label": "the AzurePerformanceDiagnostics extension", "isCorrect": 1},{"label": "Linux Diagnostic Extension (LAD) 3.0", "isCorrect": 0},{"label": "Azure Analysis Services", "isCorrect": 0},{"label": "Azure HDInsight", "isCorrect": 0}]},
+  {"question": "You have two Azure virtual machines named VM1 and VM2.<br><br>You have two Recovery Services vaults named RSV1 and RSV2. VM2 is protected by RSV1.<br><br>You need to use RSV2 to protect VM2.<br><br>What should you do first?", "choices": [{"label": "From the RSV2 blade, click Backup. From the Backup blade, select the backup for the virtual machine, and then click Backup", "isCorrect": 0},{"label": "From the RSV1 blade, click Backup items and stop the VM2 backup", "isCorrect": 0},{"label": "From the VM2 blade, click Disaster recovery, click Replication settings, and then select RSV2 as the Recovery Services vault", "isCorrect": 1},{"label": "From the RSV1 blade, click Backup Jobs and export the VM2 job", "isCorrect": 0}]},
+  {"question": "You have a resource group named RG1. RG1 contains an Azure Storage account named storageaccount1 and a virtual machine named VM1 that runs Windows Server 2016.<br><br>Storageaccount1 contains the disk files for VM1.<br><br>You apply a ReadOnly lock to RG1.<br><br>What can you do from the Azure portal?", "choices": [{"label": "Start VM1", "isCorrect": 0},{"label": "Upload a blob to storageaccount1", "isCorrect": 0},{"label": "View the keys of storageaccount1", "isCorrect": 1},{"label": "generate an automation script for RG1", "isCorrect": 0}]},
+  {"question": "You download an Azure Resource Manager template based on an existing virtual machine. The template will be used to deploy 100 virtual machines.<br><br>You need to modify the template to reference an administrative password. You must prevent the password from being stored in plain text.<br><br>What should you create to store the password?", "choices": [{"label": "an Azure Key Vault and an access policy.", "isCorrect": 1},{"label": "an Azure Storage account and an access policy.", "isCorrect": 0},{"label": "Azure Active Directory (AD) Identity Protection and an Azure policy.", "isCorrect": 0},{"label": "a Recovery Services vault and a backup policy.", "isCorrect": 0}]},
+  {"question": "Your network contains an Active Directory forest named fabrikam.com. The forest contains two child domains named corp.fabrikam.com and research.fabrikam.com.<br><br>You have an Azure subscription that contains an Azure Active Directory (Azure AD) tenant named contoso.com.<br><br>You install Azure AD Connect and sync all the on-premises user accounts to the Azure AD tenant. You implement seamless single sign-on (SSO).<br><br>You plan to change the source of authority for all the user accounts in research.fabrikam.com to Azure AD.<br><br>You need to prevent research.fabrikam.com from resyncing to Azure AD.<br><br>Solution: From the Azure Active Directory admin center, you delete a custom domain.<br><br>Does this meet the goal?", "choices": [{"label": "Yes", "isCorrect": 0},{"label": "No", "isCorrect": 1}]},
+  {"question": "Your network contains an Active Directory forest named fabrikam.com. The forest contains two child domains named corp.fabrikam.com and research.fabrikam.com.<br><br>You have an Azure subscription that contains an Azure Active Directory (Azure AD) tenant named contoso.com.<br><br>You install Azure AD Connect and sync all the on-premises user accounts to the Azure AD tenant. You implement seamless single sign-on (SSO).<br><br>You plan to change the source of authority for all the user accounts in research.fabrikam.com to Azure AD.<br><br>You need to prevent research.fabrikam.com from resyncing to Azure AD.<br><br>Solution: You use the Synchronization Service Manager.<br><br>Does this meet the goal?", "choices": [{"label": "Yes", "isCorrect": 0},{"label": "No", "isCorrect": 1}]},
+  {"question": "You have an Azure solution that uses Multi-Factor Authentication for added security when users are outside of the office. The usage model has been set to Per Authentication.<br><br>Your company acquires another company and adds the new staff to Azure Active Directory (Azure AD). New staff members must use Multi-Factor Authentication.<br><br>You need to change the usage model to Per Enabled User.<br><br>What should you recommend?", "choices": [{"label": "Create a new Multi-Factor Authentication provider and reconfigure the usage model.", "isCorrect": 0},{"label": "Create a new Multi-Factor Authentication provider with a backup from the current Multi-Factor Authentication provider data.", "isCorrect": 1},{"label": "Use the Azure portal to change the current usage model.", "isCorrect": 0},{"label": "Use Azure CLI to change the current usage model.", "isCorrect": 0}]},
+  {"question": "Your network contains an on-premises Active Directory and an Azure Active Directory (Azure AD) tenant.<br><br>You deploy Azure AD Connect and configure pass-through authentication?<br><br>Your Azure subscription contains several web apps that are accessed from the Internet.<br><br>You plan to enable Azure Multi-Factor Authentication (MFA) for the Azure tenant.<br><br>You need to recommend a solution to prevent users from being prompted for Azure MFA when they access the web apps from the on-premises network.<br><br>What should you include in the recommendation?", "choices": [{"label": "a site-to-site VPN between the on-premises network and Azure", "isCorrect": 0},{"label": "an Azure policy", "isCorrect": 0},{"label": "an Azure ExpressRoute circuit", "isCorrect": 0},{"label": "trusted IPs", "isCorrect": 1}]},
+  {"question": "You are the global administrator for an Azure Active Directory (Azure AD) tenant named adatum.com.<br><br>You need to enable two-step verification for Azure users.<br><br>What should you do?", "choices": [{"label": "Create an Azure AD conditional access policy.", "isCorrect": 1},{"label": "Configure a playbook in Azure Security Center.", "isCorrect": 0},{"label": "Enable Azure AD Privileged Identity Management.", "isCorrect": 0},{"label": "Install an MFA Server.", "isCorrect": 0}]},
+  {"question": "Your network contains an Active Directory forest named fabrikam.com. The forest contains two child domains named corp.fabrikam.com and research.fabrikam.com.<br><br>You have an Azure subscription that contains an Azure Active Directory (Azure AD) tenant named contoso.com.<br><br>You install Azure AD Connect and sync all the on-premises user accounts to the Azure AD tenant. You implement seamless single sign-on (SSO).<br><br>You plan to change the source of authority for all the user accounts in research.fabrikam.com to Azure AD.<br><br>You need to prevent research.fabrikam.com from resyncing to Azure AD.<br><br>Solution: You use the Azure AD Connect wizard.<br><br>Does this meet the goal?", "choices": [{"label": "Yes", "isCorrect": 0},{"label": "No", "isCorrect": 1}]},
+  {"question": "You have a Recovery Service vault that you use to test backups. The test backups contain two protected virtual machines.<br><br>You need to delete the Recovery Services vault.<br><br>What should you do first?", "choices": [{"label": "From the Recovery Service vault, delete the backup data", "isCorrect": 0},{"label": "Modify the disaster recovery properties of each virtual machines", "isCorrect": 0},{"label": "Modify the locks of each virtual machine", "isCorrect": 0},{"label": "From the Recovery Service vault, stop the backup of each backup item", "isCorrect": 1}]},
+  {"question": "Your network contains an Active Directory forest named fabrikam.com. The forest contains two child domains named corp.fabrikam.com and research.fabrikam.com.<br><br>You have an Azure subscription that contains an Azure Active Directory (Azure AD) tenant named contoso.com.<br><br>You install Azure AD Connect and sync all the on-premises user accounts to the Azure AD tenant. You implement seamless single sign-on (SSO).<br><br>You plan to change the source of authority for all the user accounts in research.fabrikam.com to Azure AD.<br><br>You need to prevent research.fabrikam.com from resyncing to Azure AD.<br><br>Solution: You use Active Directory Domains and Trusts from a computer joined to fabrikam.com.<br><br>Does this meet the goal?", "choices": [{"label": "Yes", "isCorrect": 0},{"label": "No", "isCorrect": 1}]},
+  {"question": "question 18 page 173<br><br>You have the Azure virtual machines shown in the following table.<br><br>You have a Recovery Services vault that protects VM1 and VM2.<br><br>You need to protect VM3 and VM4 by using Recovery Services.<br><br>What should you do first?", "choices": [{"label": "Create a new backup policy", "isCorrect": 0},{"label": "Create a new Recovery Services vault", "isCorrect": 1},{"label": "Configure the extensions for VM3 and VM4", "isCorrect": 0},{"label": "Create a storage account", "isCorrect": 0}]},
+  {"question": "You have an Azure Active Directory (Azure AD) domain that contains 5,000 user accounts. You create a new user account named AdminUser1.<br><br>You need to assign the User administrator administrative role to AdminUser1.<br><br>What should you do from the user account properties?", "choices": [{"label": "From the Directory role blade, modify the directory role", "isCorrect": 1},{"label": "From the Licenses blade, assign a new license", "isCorrect": 0},{"label": "From the Groups blade, invite the user account to a new group", "isCorrect": 0}]},
+  {"question": "case study page 175<br><br>You need to prepare the environment to meet the authentication requirements.<br><br>Which two actions should you perform? Each correct answer presents part of the solution<br><br>NOTE: Each correct selection is worth one point.", "choices": [{"label": "Allow inbound TCP port 8080 to the domain controllers in the Miami office", "isCorrect": 0},{"label": "Install Azure AD Connect on a server in the Miami office and enable Pass-through Authentication", "isCorrect": 1},{"label": "Install the Active Directory Federation Services (AD FS) role on a domain controller in the Miami office", "isCorrect": 0},{"label": "Join the client computers in the Miami office to Azure AD", "isCorrect": 0},{"label": "Add http://autologon.microsoftazuread-sso.com to the intranet zone of each client computer in the Miami office.", "isCorrect": 1}]},
+  {"question": "case study page 175<br><br>Which blade should you instruct the finance department auditors to use?", "choices": [{"label": "Partner information", "isCorrect": 0},{"label": "Cost analysis", "isCorrect": 0},{"label": "Resource providers", "isCorrect": 0},{"label": "Invoices", "isCorrect": 1}]},
+  {"question": "case study page 180<br><br>You need to recommend a solution to automate the configuration for the finance department users. The solution must meet the technical requirements.<br><br>What should you include in the recommendation?", "choices": [{"label": "an Azure logic app and the Microsoft Identity Management (MIM) client", "isCorrect": 0},{"label": "Azure AD Identity Protection", "isCorrect": 0},{"label": "dynamic groups and conditional access policies", "isCorrect": 1},{"label": "Azure AD B2C", "isCorrect": 0}]},
+  {"question": "case study page 180<br><br>You discover that VM3 does NOT meet the technical requirements.<br><br>You need to verify whether the issue relates to the NSGs.<br><br>What should you use?", "choices": [{"label": "Diagram in VNet1", "isCorrect": 0},{"label": "Diagnostic settings in Azure Monitor", "isCorrect": 0},{"label": "IP flow verify in Azure Network Watcher", "isCorrect": 1},{"label": "Diagnose and solve problems in Traffic Manager profiles", "isCorrect": 0},{"label": "the security recommendations in Azure Advisor", "isCorrect": 0}]},
+  {"question": "case study page 184<br><br>You need to meet the vendor notification requirement.<br><br>Solution: Configure notifications in the Azure API Management instance.<br><br>Does the solution meet the goal?", "choices": [{"label": "Yes", "isCorrect": 1},{"label": "No", "isCorrect": 0}]},
+  {"question": "case study page 184<br><br>You need to meet the vendor notification requirement.<br><br>Solution: Update the Delivery API to send emails by using a cloud-based email service.<br><br>Does the solution meet the goal?", "choices": [{"label": "Yes", "isCorrect": 0},{"label": "No", "isCorrect": 1}]},
+  {"question": "case study page 184<br><br>You need to meet the vendor notification requirement.<br><br>Solution: Create and apply a custom outbound Azure API Management policy.<br><br>Does the solution meet the goal?", "choices": [{"label": "Yes", "isCorrect": 0},{"label": "No", "isCorrect": 1}]},
+  {"question": "case study page 184<br><br>You need to resolve the delivery API error.<br><br>What should you do?", "choices": [{"label": "Implement simple retry by using the EnableRetryOnFailure feature of Entity Framework.", "isCorrect": 0},{"label": "Implement exponential backoff by using the EnableRetryOnFailure feature of Entity Framework.", "isCorrect": 1},{"label": "Implement a Circuit Breaker pattern by using the EnableRetryOnFailure feature of Entity Framework.", "isCorrect": 0},{"label": "Invoke a custom execution strategy in Entity Framework.", "isCorrect": 0}]},
+  {"question": "case study page 184<br><br>You need to implement the purchase requirement.<br><br>What should you do?", "choices": [{"label": "Use the Bot Framework REST API conversation operations to send the user’s voice and the Speech Service API to recognize intents.", "isCorrect": 1},{"label": "Use the Direct Line REST API to send the user’s voice and the Speech Service API to recognize intents.", "isCorrect": 0},{"label": "Use the Speech Service API to send the user’s voice and the Bot Framework REST API conversation operations to recognize intents.", "isCorrect": 0},{"label": "Use the Bot Framework REST API attachment operations to send the user’s voice and the Speech Service API to recognize intents.", "isCorrect": 0}]},
+  {"question": "question 1 page 192<br><br>Your company is developing an e-commerce Azure App Service Web App to support hundreds of restaurant locations around the world.<br><br>You are designing the messaging solution architecture to support the e-commerce transactions and messages. The solution will include the following features:<br><br>You need to design a solution for the Inventory Distribution feature.<br><br>Which Azure service should you use?", "choices": [{"label": "Azure Service Bus", "isCorrect": 1},{"label": "Azure Relay", "isCorrect": 0},{"label": "Azure Event Grid", "isCorrect": 0},{"label": "Azure Event Hub", "isCorrect": 0}]},
+  {"question": "You are responsible for mobile app development for a company. The company develops apps on Windows Mobile, IOS, and Android.<br><br>You plan to integrate push notifications into every app.<br><br>You need to be able to send users alerts from a backend server.<br><br>Which two options can you use to achieve this goal? Each correct answer presents a complete solution.<br><br>NOTE: Each correct selection is worth one point.", "choices": [{"label": "Azure Web App", "isCorrect": 0},{"label": "Azure Mobile App Service", "isCorrect": 1},{"label": "Azure SQL Database", "isCorrect": 0},{"label": "Azure Notification Hubs", "isCorrect": 1},{"label": "a virtual machine", "isCorrect": 0}]},
+  {"question": "You are developing an app that references data which is sharded across multiple Azure SQL databases.<br><br>The app must guarantee transactional consistency for changes across several different sharding key values.<br><br>You need to manage the transactions.<br><br>What should you implement?", "choices": [{"label": "Elastic database transactions with horizontal partitioning.", "isCorrect": 1},{"label": "Distributed transactions coordinated by Microsoft Distributed Transaction Coordinator (MSDTC).", "isCorrect": 0},{"label": "Server-coordinated transactions from .NET application.", "isCorrect": 0},{"label": "Elastic database transactions with vertical partitioning.", "isCorrect": 0}]},
+  {"question": "You are developing a speech-enabled home automation control bot.<br><br>The bot interprets some spoken words incorrectly.<br><br>You need to improve the spoken word recognition for the bot.<br><br>What should you implement?", "choices": [{"label": "The Skype for Business Channel and use scorable dialogs for improving conversation flow.", "isCorrect": 0},{"label": "The Web Chat Channel and Speech priming using a Bing Speech Service and LUIS app.", "isCorrect": 1},{"label": "The Skype Channel and use scorable dialogs for improving conversation flow.", "isCorrect": 0},{"label": "The Cortana Channel and use scorable dialogs for improving conversation flow.", "isCorrect": 0}]},
+  {"question": "A company is migrating an existing on-premises third-party website to Azure. The website is stateless.<br><br>The company does not have access to the source code for the website. They do not have the original installer.<br><br>The number of visitors at the website varies throughout the year. The on-premises infrastructure was resized to accommodate peaks but the extra capacity was not used.<br><br>You need to implement a virtual machine scale set instance.<br><br>What should you do?", "choices": [{"label": "Use an autoscale setting to scale instances vertically", "isCorrect": 0},{"label": "Create 100 autoscale settings per resource", "isCorrect": 0},{"label": "Scale out by one instance when the average CPU usage of one of the instances is over 80 percent", "isCorrect": 0},{"label": "Use Azure Monitor to create autoscale settings using custom metrics", "isCorrect": 1},{"label": "Use an autoscale setting with unlimited maximum number of instances", "isCorrect": 0},{"label": "Use a webhook to log autoscale failures", "isCorrect": 0}]},
+  {"question": "You have an Azure subscription named Subscription1.<br><br>You create several Azure virtual machines in Subscription1. All of the virtual machines belong to the same virtual network.<br><br>You have an on-premises Hyper-V server named Server1. Server1 hosts a virtual machine named VM1.<br><br>You plan to replicate VM1 to Azure.<br><br>You need to create additional objects in Subscription1 to support the planned deployment.<br><br>Which three objects should you create? Each correct answer presents part of the solution.<br><br>NOTE: Each correct selection is worth one point.", "choices": [{"label": "Hyper-V site", "isCorrect": 1},{"label": "Azure Recovery Services Vault", "isCorrect": 1},{"label": "storage account", "isCorrect": 0},{"label": "replication policy", "isCorrect": 1},{"label": "Azure Traffic Manager instance", "isCorrect": 0},{"label": "endpoint", "isCorrect": 0}]},
+  {"question": "question 9 page 208<br><br>Your company is developing an e-commerce Azure App Service Web App to support hundreds of restaurant locations around the world.<br><br>You are designing the messaging solution architecture to support the e-commerce transactions and messages. The e-commerce application has the following features and requirements:<br><br>You need to choose the Azure messaging solution to support the Restaurant Telemetry feature.<br><br>Which Azure service should you use?", "choices": [{"label": "Azure Relay", "isCorrect": 0},{"label": "Azure Event Grid", "isCorrect": 0},{"label": "Azure Event Hub", "isCorrect": 1},{"label": "Azure Service Bus", "isCorrect": 0}]},
+  {"question": "A company is migrating an existing on-premises third-party website to Azure. The website is stateless.<br><br>The company does not have access to the source code for the website. They have the original installer.<br><br>The number of visitors at the website varies throughout the year. The on-premises infrastructure was resized to accommodate peaks but the extra capacity was not used.<br><br>You need to implement a virtual machine scale set instance.<br><br>What should you do", "choices": [{"label": "Use a webhook to log autoscale failures.", "isCorrect": 0},{"label": "Use an autoscale setting to scale instances vertically.", "isCorrect": 0},{"label": "Use only default diagnostics metrics to trigger autoscaling", "isCorrect": 1},{"label": "Use an autoscale setting to define more profiles that have one or more autoscale rules.", "isCorrect": 0}]},
+  {"question": "question 11 page 211<br><br>You have an Azure Cosmos DB database that contains a container named Container1. The partition key for Container1 is set to /day. Container1 contains the items shown in the following table.<br><br>You need to programmatically query Azure Cosmos DB and retrieve item1 and item2 only.<br><br>Solution: You run the following query.<br><br>You set the EnableCrossPartitionQuery property to False.<br><br>Does this meet the goal?", "choices": [{"label": "Yes", "isCorrect": 0},{"label": "No", "isCorrect": 1}]}
+]

@@ -1,0 +1,16 @@
+.highlight {
+  background: #ffc107;
+}
+
+button {
+  margin: 10px 20px 20px 0px
+}
+
+.choice-container {
+  margin-bottom: 10px;
+  border: 1px solid gray;
+}
+
+td {
+  padding: 10px;
+}

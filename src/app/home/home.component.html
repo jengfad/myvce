@@ -1,0 +1,49 @@
+<div class="m-4">
+  <table class="m-2">
+    <tr>
+      <td><input type="checkbox" [(ngModel)]="alwaysShowChoices"/></td>
+      <td><span>ALWAYS SHOW CHOICES</span></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" [(ngModel)]="areChoicesShuffled" (change)="shuffleChoices()"/></td>
+      <td><span>SHUFFLE CHOICES</span></td>
+    </tr>
+  </table>
+  <hr>
+  <h3>Question {{questionCtr}} of {{totalQuestions}}</h3>
+  <p class="question mt-3"></p>
+  <button *ngIf="!alwaysShowChoices" (click)="showTheChoices()" type="button" class="btn btn-secondary">Show Choices</button>
+  <ng-container *ngIf="!!showChoices || !!alwaysShowChoices">
+    <hr><br>
+    <table class="m-2">
+      <ng-container *ngFor="let choice of currentChoices">
+        <tr class="choice-container" [ngClass]="{'highlight': !!choice.isCorrect && !!showAnswers}">
+          <td><input type="checkbox" [(ngModel)]="choice.isSelected" /></td>
+          <td><span>{{choice.label}}</span></td>
+        </tr>
+      </ng-container>
+    </table>
+  </ng-container>
+  <br>
+  <hr>
+  <button (click)="showTheAnswers()" type="button" class="btn btn-warning">Show Answers</button>
+  <button *ngIf="!endOfExam" (click)="submitAnswers()" type="button" class="btn btn-primary ml-5">Next</button>
+
+  <h1 *ngIf="!!endOfExam">Your Score: {{score}}/{{totalQuestions}}</h1>
+
+  <div *ngIf="wrongItems.length > 0 && !!endOfExam">
+    <hr><hr>
+    <h1>Wrong Items</h1>
+    <div *ngFor="let item of wrongItems; let i = index">
+      <hr>
+      <h4>Item #{{i + 1}}</h4>
+      <p style="white-space: pre-line;">{{item.question}}</p>
+      <div *ngFor="let choice of item.choices">
+      <div class="choice-div" [ngClass]="{'highlight': !!choice.isCorrect}">
+        <input type="checkbox" disabled [(ngModel)]="choice.isSelected" />
+        <span>{{choice.label}}</span>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
